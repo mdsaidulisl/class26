@@ -125,6 +125,7 @@ img{
     border-radius: 4px;
     transform: scale(1);
     transition: .4s;
+    cursor: pointer;
 }
 .mycardimg img:hover{
     border-radius: 4px;
@@ -142,8 +143,7 @@ img{
     position: absolute;
     bottom: 21px;
     right: 20px;
-    /* visibility: hidden;
-    opacity: -1; */
+    cursor: pointer;
     transition:.4s ;
 }
 .chotoimg img{
