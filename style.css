@@ -40,29 +40,11 @@ img{
     color:#9293a5 ;
 }
 
-.headerimg{
-    width: 700px;
-}
-.singleimg{
-   
-}
-.singleimg img{
-    /* width: 100%; */
-    /* border: 1px solid #ddd; */
-
-}
 .imgsection {
-    /* border: 1px solid #ddd; */
     width: 719px;
-    /* height: 277px; */
+    
 }
-.chobi1{
-    /* width: 60px;
-    height: 40px;
-    border-bottom: 1px solid #ddd;
-    border-right: 1px solid #ddd; */
 
-}
 .picture {
     width: 241px;
     height: 142px;
@@ -74,25 +56,20 @@ img{
     cursor: pointer;
     margin-left: -5px;
 }
-.picture img::after{
-    content: "";
-    position: absolute;
-    background-color: #808080;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-   
-    
-}
+
 .picture:hover{
     background-color: #d8e2ef;
 
 }
 .picture img {
     width: 75%;
-    position: relative;
-    
+    transform: scale(1.2);
+    transition: .4s;
+   
+}
+.picture:hover img{
+    transform: scale(1);
+   
 }
 
 
@@ -135,6 +112,10 @@ img{
 .imgblog{
     margin: 70px 0;
 }
+/* .imgblog:hover .chotoimg {
+    visibility: visible;
+    opacity: 1;
+} */
 
 .mycardimg {
     position: relative;
@@ -142,6 +123,12 @@ img{
 }
 .mycardimg img{
     border-radius: 4px;
+    transform: scale(1);
+    transition: .4s;
+}
+.mycardimg img:hover{
+    border-radius: 4px;
+    transform: scale(1.1);
 }
 .chotoimg {
     background-color: #3763eb;
@@ -155,24 +142,54 @@ img{
     position: absolute;
     bottom: 21px;
     right: 20px;
+    /* visibility: hidden;
+    opacity: -1; */
+    transition:.4s ;
 }
 .chotoimg img{
-    /* width: 20%; */
-    /* height: auto; */
+   
     border-radius: 50%;
+    transform: scale();
+    transition: .4s;
+
+}
+.chotoimg img:hover{
+  
+    border-radius: 50%;
+    transform: scale(1.5);
+    
 
 }
 .chotoimg h6 {
     color: #fff;
     margin-bottom: 0;
     margin-top: 10px;
+    transform: scale(1);
+   transition: .4s;
 }
+.chotoimg h6:hover{
+   
+}
+.chotoimg:hover h6{
+    transform: scale(1.1);
+    
+}
+.chotoimg:hover {
+    background-color: #081828;
+    
+}
+
 .cardtext{
     padding: 0px;
 }
 .cardtext h5 {
     margin: 30px 0;
     font-size: 25px;
+    cursor: pointer;
+    transition: .3s;
+}
+.cardtext h5:hover{
+   color: #124af2;
 }
 .cardtext p {
     color: #9293a5;
@@ -210,7 +227,18 @@ img{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
+   
 }
+.logofooter i{
+    
+    transform: scale(1);
+    transition: .4S;
+}
+.logofooter  i:hover{
+    color: red;
+    transform: scale(1.5);
+}
+
 /* footerlist */
 
 
@@ -232,6 +260,11 @@ img{
     display: inline-block;
     color:#868c9a ;
     margin-top:8px ;
+    transition: .3s;
+}
+.footerlist ul li a:hover{
+    color: red;
+    letter-spacing: 3px;
 }
 
 .footerbottom{
